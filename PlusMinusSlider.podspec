@@ -24,7 +24,7 @@ This slider is made by SwiftUI. PMSlider can express plus and minus value.
                        DESC
 
   s.homepage         = 'https://github.com/xAxis47/PMSlider'
-  s.screenshots     = 'https://github.com/xAxis47/ZBSlider/assets/140302470/edc48fba-878c-4ed6-9254-ebf9ce10fced'
+  s.screenshots     = 'https://github.com/xAxis47/PlusMinusSlider/assets/140302470/cccaeff2-41df-4d54-b995-d3e5c1306bb7'
   s.license          = { :type => 'Apache 2.0 License', :file => 'LICENSE' }
   s.author           = { 'xAxis47' => 'wataru.kawagoe.dev@gmail.com' }
   s.source           = { :git => 'https://github.com/xAxis47/PMSlider.git', :tag => s.version.to_s }
