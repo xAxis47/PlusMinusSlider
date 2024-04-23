@@ -1,0 +1,22 @@
+{
+  "name": "PlusMinusSlider",
+  "version": "0.1.0",
+  "summary": "A short description of PlusMinusSlider.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/xAxis47/PlusMinusSlider",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xAxis47": "wataru.kawagoe.dev@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/xAxis47/PlusMinusSlider.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "PlusMinusSlider/Classes/**/*"
+}
