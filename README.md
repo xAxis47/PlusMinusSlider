@@ -1,21 +1,21 @@
-<img src="https://github.com/xAxis47/ZBSlider/assets/140302470/edc48fba-878c-4ed6-9254-ebf9ce10fced" width="300">
+<img src="https://github.com/xAxis47/PlusMinusSlider/assets/140302470/cccaeff2-41df-4d54-b995-d3e5c1306bb7" width="300">
 
 ZBSlider can express below 0 value. It is written in SwiftUI.
 
 # Installation
 ## Cocoapods
 
-pod “ZBSlider”
+pod “PlusMinusSlider”
 
 # Usage
 
 Import the framework.
 
 ```
-import ZeroBaseSlider
+import PlusMinusSlider
 ```
 
-Make ZeroBaseSlider and must fill “thumbValue”.
+Make PlusMinusSlider and must fill “thumbValue”.
 
 ```
 import SwiftUI
@@ -26,7 +26,7 @@ struct ContentView: View {
 
   var body: some View {
 
-    ZBSlider(thumbValue: $thumbValue)
+    PlusMinusSlider(thumbValue: $thumbValue)
 
   }
 
