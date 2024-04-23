@@ -1,0 +1,6 @@
+use_frameworks!
+target 'PlusMinusSlider_Tests' do
+  pod 'PlusMinusSlider', :path => '../'
+  
+  
+end
