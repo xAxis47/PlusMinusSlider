@@ -40,6 +40,6 @@ This slider is made by SwiftUI. PlusMinusSlider can express plus and minus value
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'SwiftUI'
+  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
