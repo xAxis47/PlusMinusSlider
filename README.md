@@ -1,6 +1,6 @@
 <img src="https://github.com/xAxis47/PlusMinusSlider/assets/140302470/cccaeff2-41df-4d54-b995-d3e5c1306bb7" width="300">
 
-ZBSlider can express below 0 value. It is written in SwiftUI.
+PlusMinusSlider can express below 0 value. It is written in SwiftUI.
 
 # Installation
 ## Cocoapods
