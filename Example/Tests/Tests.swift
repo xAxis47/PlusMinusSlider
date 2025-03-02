@@ -1,5 +1,4 @@
 import XCTest
-import PlusMinusSlider
 
 class Tests: XCTestCase {
     
