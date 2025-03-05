@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   
-This slider is made by SwiftUI. PlusMinusSlider can express plus and minus value.
+If you want to express plus and minus values with one slider, please use this PlusMinusSlider. It is written in SwiftUI.
 
                        DESC
 
@@ -37,12 +37,12 @@ This slider is made by SwiftUI. PlusMinusSlider can express plus and minus value
   
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.frameworks = 'SwiftUI'
   
   # s.resource_bundles = {
   #   'PlusMinusSlider' => ['PlusMinusSlider/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
