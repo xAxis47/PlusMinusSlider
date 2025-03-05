@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PlusMinusSlider'
-  s.version          = '0.9.1.2'
+  s.version          = '0.9.1.3'
   s.summary          = 'PlusMinusSlider can express plus and minus value.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ This slider is made by SwiftUI. PlusMinusSlider can express plus and minus value
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '16.0'
-  s.swift_version = '5.0'
+  s.swift_version = '4.0'
 
   s.source_files = 'PlusMinusSlider/Classes/**/*'
   
