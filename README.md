@@ -55,6 +55,13 @@ If you need you can change appearance with some modifier.
       .thumbValueFont(_ font:)
       .thumbValueFontWeight(_ weight:)
       .valueColor(_ color:)
+            
+      new!!
+      .barWidth(_ width:)
+      .barHeight(_ height:)
+      .thumbDiameter(_ diameter:)
+      .thumbValueOffset(_ offset:)
+      
 ```
 
 # Untested
