@@ -35,7 +35,7 @@ public struct PlusMinusSlider: View {
     private let valueColor: Color
     
     public init(barWidth: Double = UIScreen.main.bounds.width * 0.65, maxValue: Double = 5, minValue: Double = -5, thumbValue: Binding<Double>) {
-        
+       
         self.barWidth = barWidth
         self.barHeight = 10
         self.isHideLimitValue = false
@@ -79,7 +79,7 @@ public struct PlusMinusSlider: View {
                 
                 if !isHideLimitValue {
                     
-                    //left negative limit value
+                    //left limit value
                     Text("\(Int(minValue))")
                         .font(minValueFont)
                         .fontWeight(minValueFontWeight)
@@ -104,7 +104,7 @@ public struct PlusMinusSlider: View {
                     //thumb value's type is Int and show thumb value
                     if isIntThumb && !isHideThumbValue {
                         
-                        Text("\(Int(thumbValue))")
+                        Text("\(Int(round(thumbValue)))")
                             .fixedSize(horizontal: true, vertical: false)
                             .font(thumbValueFont)
                             .fontWeight(thumbValueFontWeight)
@@ -115,7 +115,7 @@ public struct PlusMinusSlider: View {
                     //thumb's value's type is Double and show thumb value
                     } else if !isIntThumb && !isHideThumbValue {
                         
-                        Text("\(Double(thumbValue))")
+                        Text(String(format: "%.1f", thumbValue))
                             .fixedSize(horizontal: true, vertical: false)
                             .font(thumbValueFont)
                             .fontWeight(thumbValueFontWeight)
@@ -138,11 +138,21 @@ public struct PlusMinusSlider: View {
                                     
                                     if value.location.x > 0 && value.location.x < barWidth {
                                         
-                                        //calculate thumb's center position.
-                                        thumbPosition = Double(value.location.x)
+                                        if isSmoothDrag {
+                                            
+                                            //calculate thumb's center position.
+                                            thumbPosition = Double(value.location.x)
 
-                                        //calculate thumb's value.
-                                        thumbValue = Double(thumbPosition / barWidth) * (maxValue - minValue) + minValue
+                                            //calculate thumb's value.
+                                            thumbValue = Double(thumbPosition / barWidth) * (maxValue - minValue) + minValue
+                                            
+                                        } else {
+                                            
+                                            self.thumbPosition = round(Double(value.location.x / barWidth * (maxValue - minValue))) * barWidth / (maxValue - minValue)
+                                            
+                                            thumbValue = round((Double(thumbPosition / barWidth)) * (maxValue - minValue)) + minValue
+                                            
+                                        }
                                         
                                         //width represents the width of the blue capsule. allow for negative.
                                         let width = thumbPosition - zeroPosition
@@ -229,7 +239,7 @@ public extension PlusMinusSlider {
         self.valueColor = valueColor
         
         self._thumbValue = thumbValue
-        
+
         let initialized = initialOperation(max: maxValue, min: minValue, thumbValue: thumbValue)
         
         self._thumbPosition = initialized.thumbPosition
@@ -437,6 +447,13 @@ public extension PlusMinusSlider {
             zeroPosition = State(initialValue: Double(barWidth))
             leftBarPosition = State(initialValue: Double(barWidth / (max - min) * (thumbValue.wrappedValue - min)))
             valueWidth = State(initialValue: Double(fabs(barWidth / (max - min) * (thumbValue.wrappedValue - max))))
+            
+            print("zeroPosition is \(zeroPosition)")
+            print("leftBarPosition is \(leftBarPosition)")
+            print("thumbPosition is \(thumbPosition)")
+            print("max is \(max)")
+            print("min is \(min)")
+            print("thumbValue is \(thumbValue)")
             
         } else if min <= 0 && max >= 0 && thumbValue.wrappedValue >= 0  {
 
