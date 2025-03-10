@@ -24,6 +24,7 @@ import SwiftUI
 
 struct ContentView: View {
 
+//you can set several thumbValue
   @State var thumbValue: Double = 0
 
   var body: some View {
