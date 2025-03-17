@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PlusMinusSlider'
-  s.version          = '0.9.1.8'
+  s.version          = '1.0.0'
   s.summary          = 'If you want to express plus and minus values with one slider, please use this PlusMinusSlider.'
 
 # This description is used to generate tags and improve search results.
