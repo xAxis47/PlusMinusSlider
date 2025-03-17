@@ -24,7 +24,7 @@ If you want to express plus and minus values with one slider, please use this Pl
                        DESC
 
   s.homepage         = 'https://github.com/xAxis47/PlusMinusSlider'
-  s.screenshots     = 'https://github.com/xAxis47/PlusMinusSlider/assets/140302470/cccaeff2-41df-4d54-b995-d3e5c1306bb7'
+  s.screenshots     = 'https://github.com/xAxis47/PlusMinusSlider/blob/b4a1d0f7f1add6783c64301a020d4e5b3f6d2789/PlusMinusSlider/Assets/screenshot01.gif'
   s.license          = { :type => 'Apache 2.0 License', :file => 'LICENSE' }
   s.author           = { 'xAxis47' => 'wataru.kawagoe.dev@gmail.com' }
   s.source           = { :git => 'https://github.com/xAxis47/PlusMinusSlider.git', :tag => s.version.to_s }
