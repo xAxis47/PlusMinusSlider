@@ -42,7 +42,7 @@ If you need you can change appearance with some modifier.
 ```
       .isHideLimitValue(_ bool:)
       .isHideThumbValue(_ bool:)
-      .isIntThumb(_ bool:)
+      .isIntValue(_ bool:)
       .limitValueOffset(_ offset:)
       .maxValueColor(_ color:)
       .maxValueFont(_ font:)
