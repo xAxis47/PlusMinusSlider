@@ -17,7 +17,7 @@ Import the framework.
 import PlusMinusSlider
 ```
 
-Make PlusMinusSlider and must fill “thumbValue”. Don't set over limit value.
+Make PlusMinusSlider and must fill “thumbValue”. Don't set over limit value. If the upper limit is exceeded, a fatalError will occur.
 
 ```
 import SwiftUI
@@ -64,6 +64,11 @@ If you need you can change appearance with some modifier.
       .minValue(_ value:)
       .thumbDiameter(_ diameter:)
       .thumbValueOffset(_ offset:)
+      .isVertical(_ bool:)
+      .maxSFSymbolsString(_ string:)
+      .minSFSymbolsString(_ string:)
+
+
       
 ```
 
