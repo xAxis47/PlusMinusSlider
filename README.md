@@ -1,6 +1,6 @@
 <img src="https://img.shields.io/badge/4.0-Swift-red?style=flat&logo=Swift&logoColor=FA7343"> <img src="https://img.shields.io/badge/16.0-iOS-orange?style=flat"> <img src="https://img.shields.io/badge/LICENSE-Apache%20License%202.0-green?style=flat">
 
-<img src="https://github.com/xAxis47/PlusMinusSlider/blob/8e8cc76cbdd4713b2da1b40f8c3f15cc11319892/PlusMinusSlider/Assets/screenshot01.gif" width="300">
+<img src="https://github.com/xAxis47/PlusMinusSlider/blob/8d19fca76b9351d9eeefa99ca79f5515fb145543/PlusMinusSlider/Assets/screenshot01.gif" width="300">
 
 If you want to express plus and minus values with one slider, please use this PlusMinusSlider. This slider can provide you positive and negative values, several fonts, font weights and colors. It is written in SwiftUI.
 
