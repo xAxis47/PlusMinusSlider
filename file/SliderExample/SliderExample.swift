@@ -34,8 +34,6 @@ struct SliderExample: View {
     @State var thumbValueOffset: Double = 30
     @State var valueColor: Color = .blue
     
-    private let buttonHeight: Double = 30
-    
     var body: some View {
         
         let slider = PlusMinusSlider(thumbValue: $value)
@@ -121,13 +119,13 @@ struct SliderExample: View {
             HStack {
                 
                 Button(action: {isIntValue.toggle()}, label:{Text("isIntValue")})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(.white)
                     .background(.blue)
                     .cornerRadius(24)
                 
                 Button(action: {isVertical.toggle()}, label:{Text("isVertical")})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(.white)
                     .background(.blue)
                     .cornerRadius(24)
@@ -136,13 +134,13 @@ struct SliderExample: View {
             HStack {
                 
                 Button(action: {isHideLimitValue.toggle()}, label: {Text(("isHideLimitValue"))})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(.white)
                     .background(.blue)
                     .cornerRadius(24)
                 
                 Button(action: {isHideThumbValue.toggle()}, label:{Text("isHideThumbValue")})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(.white)
                     .background(.blue)
                     .cornerRadius(24)
@@ -152,13 +150,13 @@ struct SliderExample: View {
             HStack {
                 
                 Button(action: {maxValueColor = changeColor()}, label: {Text(("maxValueColor"))})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(maxValueColor)
                     .cornerRadius(24)
                 
                 Button(action: {minValueColor = changeColor()}, label:{Text("minValueColor")})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(minValueColor)
                     .cornerRadius(24)
@@ -168,13 +166,13 @@ struct SliderExample: View {
             HStack {
                 
                 Button(action: {maxValueFont = randomFont()}, label: {Text(("maxValueFont"))})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(.blue)
                     .cornerRadius(24)
                 
                 Button(action: {minValueFont = randomFont()}, label:{Text("minValueFont")})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(.blue)
                     .cornerRadius(24)
@@ -184,13 +182,13 @@ struct SliderExample: View {
             HStack {
                 
                 Button(action: {maxValueFontWeight = randomFontWeight()}, label: {Text(("maxValueFontWeight"))})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(.blue)
                     .cornerRadius(24)
                 
                 Button(action: {minValueFontWeight = randomFontWeight()}, label:{Text("minValueFontWeight")})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(.blue)
                     .cornerRadius(24)
@@ -200,13 +198,13 @@ struct SliderExample: View {
             HStack {
                 
                 Button(action: {sliderColor = changeColor()}, label: {Text(("sliderColor"))})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(sliderColor)
                     .cornerRadius(24)
                 
                 Button(action: {thumbColor = changeColor()}, label:{Text("thumbColor")})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(thumbColor)
                     .cornerRadius(24)
@@ -216,13 +214,13 @@ struct SliderExample: View {
             HStack {
                 
                 Button(action: {thumbValueColor = changeColor()}, label: {Text(("thumbValueColor"))})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(thumbValueColor)
                     .cornerRadius(24)
                 
                 Button(action: {thumbValueFont = randomFont()}, label:{Text("thumbValueFont")})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(.white)
                     .background(.blue)
                     .cornerRadius(24)
@@ -232,13 +230,13 @@ struct SliderExample: View {
             HStack {
                 
                 Button(action: {thumbValueFontWeight = randomFontWeight()}, label: {Text(("thumbValueFontWeight"))})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(.blue)
                     .cornerRadius(24)
                 
                 Button(action: {valueColor = changeColor()}, label:{Text("valueColor")})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(.white)
                     .background(valueColor)
                     .cornerRadius(24)
@@ -256,7 +254,7 @@ struct SliderExample: View {
                     }
                     
                 }, label: {Text(("minSFSymbolsString"))})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(.blue)
                     .cornerRadius(24)
@@ -270,7 +268,7 @@ struct SliderExample: View {
                     }
 
                 }, label:{Text("maxSFSymbolsString")})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(.white)
                     .background(valueColor)
                     .cornerRadius(24)
@@ -280,7 +278,7 @@ struct SliderExample: View {
             HStack {
                 
                 Button(action: {isUnderValue.toggle()}, label: {Text(("isUnderValue"))})
-                    .frame(width: 180, height: buttonHeight)
+                    .frame(width: 180, height: 36)
                     .foregroundColor(Color(.white))
                     .background(.blue)
                     .cornerRadius(24)
@@ -310,6 +308,7 @@ struct SliderExample: View {
     }
             
 }
+
 #Preview {
     SliderExample()
 }
