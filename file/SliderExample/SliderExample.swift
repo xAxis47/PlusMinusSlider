@@ -270,7 +270,7 @@ struct SliderExample: View {
                 }, label:{Text("maxSFSymbolsString")})
                     .frame(width: 180, height: 36)
                     .foregroundColor(.white)
-                    .background(valueColor)
+                    .background(.blue)
                     .cornerRadius(24)
                 
             }
