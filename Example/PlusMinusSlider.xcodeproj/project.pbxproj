@@ -6,6 +6,10 @@
 	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		34ED046F2DA0C1F9000184FE /* PlusMinusSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468D7D62D8BCE8A0065CEF3 /* PlusMinusSlider.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0C511FAF5C16998832928765 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2B7F5D436EE395F80B6A3834 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34ED046F2DA0C1F9000184FE /* PlusMinusSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
