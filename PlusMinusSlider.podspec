@@ -27,7 +27,7 @@ If you want to express plus and minus values with one slider, please use this Pl
   s.screenshots     = 'https://github.com/xAxis47/PlusMinusSlider/blob/576130b9fb5568e2abdca9f6886fb1f6907d7548/PlusMinusSlider/Assets/screenshot01.gif?raw=true'
   s.license          = { :type => 'Apache 2.0 License', :file => 'LICENSE' }
   s.author           = { 'xAxis47' => 'wataru.kawagoe.dev@gmail.com' }
-  s.source           = { :git => 'https://github.com/xAxis47/PlusMinusSlider.git', :tag => '1.0.5' }
+  s.source           = { :git => 'https://github.com/xAxis47/PlusMinusSlider.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '16.0'
